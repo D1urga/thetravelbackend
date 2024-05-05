@@ -18,6 +18,8 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 import destinationRouter from "./routes/destination.routes.js";
+import contactRouter from "./routes/contacts.routes.js";
 app.use("/api/v1/destinations", destinationRouter);
+app.use("/api/v1/contacts", contactRouter);
 
 export { app };
